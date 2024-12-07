@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <title>Products - "Trending Now"</title>
+</head>
+
+<body>
+    <!-- navbar form here  -->
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png.jpg" width="125px" />
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html" style="--i:1" class="active"><b>Home</b></a></li>
+                <li><a href="products.html" style="--i:2"><b>Products</b></a></li>
+                <li><a href="about.html" style="--i:3"><b>About</b></a></li>
+                <li><a href="contact.html" style="--i:4"><b>Contact</b></a></li>
+                <li><a href="account.html" style="--i:5"><b>Account</b></a></li>
+            </ul>
+        </nav>
+        <a href="shop.html"><img class="carti" src="cart.png" style="--i:6" style="cursor: pointer;" width="30px"
+                height="30px" /></a>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()" />
+    </div>
+
+
+    
+
+    <div class="main">
+        <div class="title">
+            <h1 style="--i:1">Welcome to Our Product page</h1>
+        </div>
+        <div class="procont">
+            <h2 class="title" style="--i:2">Featured Products</h2>
+            <div class="row">
+                <div class="col-4" style="--i:1" data-name="p-1">
+                    <img src="https://images.meesho.com/images/products/387646385/vkuwz_512.webp">
+                    <h4>Engineered Wood Display...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹1000</p>
+                </div>
+                <div class="col-4" style="--i:2" data-name="p-2">
+                    <img src="https://images.meesho.com/images/products/436879497/pzgmp_512.webp">
+                    <h4>Trendy Study Table</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹506</p>
+                </div>
+                <div class="col-4" style="--i:3" data-name="p-3">
+                    <img src="https://images.meesho.com/images/products/392420352/v5hes_512.webp">
+                    <h4>Colorful Dustpan</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹800</p>
+                </div>
+                <div class="col-4" style="--i:4" data-name="p-4">
+                    <img src="https://images.meesho.com/images/products/400240941/kdzur_512.webp">
+                    <h4>Classic Bottle Rack</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹260</p>
+                </div>
+            </div>
+
+            <!-- 2nd Product Bar  -->
+
+            <h2 class="title" style="--i:3">Men Watches</h2>
+            <div class="row">
+                <div class="col-4" style="--i:5">
+                    <img src="https://images.meesho.com/images/products/400583921/kzocy_512.webp">
+                    <h4>Pebble Everyday S...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+
+                    </div>
+                    <p>₹3,800</p>
+                </div>
+                <div class="col-4" style="--i:6">
+                    <img src="https://images.meesho.com/images/products/454029619/kt0dv_512.webp">
+                    <h4>Trendy Analog Watches</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹2,080</p>
+                </div>
+                <div class="col-4" style="--i:7">
+                    <img src="https://images.meesho.com/images/products/400589154/ba6iw_512.webp">
+                    <h4>Pebble Unique Sm...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹3,400</p>
+                </div>
+                <div class="col-4" style="--i:8">
+                    <img src="https://images.meesho.com/images/products/400588385/dv5bn_512.webp">
+                    <h4>Pebble Unique Sm...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>₹3,070</p>
+                </div>
+            </div>
+
+            <!-- 3rd Product Bar -->
+
+            <h2 class="title" style="--i:4">Men T-shirts</h2>
+            <div class="row">
+                <div class="col-4" style="--i:9">
+                    <img src="https://images.meesho.com/images/products/306146005/p53jm_512.webp">
+                    <h4>Trendy Designer Men Ts...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+
+                    </div>
+                    <p>₹250</p>
+                </div>
+                <div class="col-4" style="--i:9">
+                    <img src="https://images.meesho.com/images/products/356595847/sp5jn_512.webp">
+                    <h4>Pretty Ravishing Men Ts...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹245</p>
+                </div>
+                <div class="col-4" style="--i:10">
+                    <img src="https://images.meesho.com/images/products/445105181/nmaci_512.webp">
+                    <h4>Men Cotton Blend Regul...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹290</p>
+                </div>
+                <div class="col-4" style="--i:11">
+                    <img src="https://images.meesho.com/images/products/364641609/ldczy_512.webp">
+                    <h4>Stylish Retro Men T-shirts</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹240</p>
+                </div>
+            </div>
+
+            <!-- 4th Product Bar  -->
+
+            <h2 class="title" style="--i:5">Sports Shoes</h2>
+            <div class="row">
+                <div class="col-4" style="--i:12">
+                    <img src="https://images.meesho.com/images/products/396947088/gwll7_512.webp">
+                    <h4>Relaxed Trendy Men Spo...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+
+                    </div>
+                    <p>₹350</p>
+                </div>
+                <div class="col-4" style="--i:13">
+                    <img src="https://images.meesho.com/images/products/321921789/guwhs_512.webp">
+                    <h4>Unique Fabulous Men Sp...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>₹285</p>
+                </div>
+                <div class="col-4" style="--i:14">
+                    <img src="https://images.meesho.com/images/products/181455546/xwglw_512.webp">
+                    <h4>Aadab Fabulous Men Sp...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹460</p>
+                </div>
+                <div class="col-4" style="--i:15">
+                    <img src="https://images.meesho.com/images/products/450678766/lvjka_512.webp">
+                    <h4>Trendy Sports Shoes</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹275</p>
+                </div>
+
+                <!-- 5th Product Bar  -->
+
+                <h2 class="title" style="--i:5">Women Suits</h2>
+                <div class="row">
+                    <div class="col-4" style="--i:12">
+                        <img src="https://images.meesho.com/images/products/156737280/1r7xv_512.webp">
+                        <h4>Women's Suits & Dress Materials...</h4>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                            <i class='bx bx-star'></i>
+    
+                        </div>
+                        <p>₹270</p>
+                    </div>
+                    <div class="col-4" style="--i:13">
+                        <img src="https://images.meesho.com/images/products/201295920/fj2ah_512.webp">
+                        <h4>Stylish Organza embroidered Unstitched Suit With Dupatta Set</h4>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <p>₹375</p>
+                    </div>
+                    <div class="col-4" style="--i:14">
+                        <img src="https://images.meesho.com/images/products/398620846/wdysx_512.webp">
+                        <h4>Cotton Suit Dress Material...</h4>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <p>₹400</p>
+                    </div>
+                    <div class="col-4" style="--i:15">
+                        <img src="https://images.meesho.com/images/products/183423960/rvq1q_512.webp">
+                        <h4>Women's Multicolor Floral Printed Pashmina Suits...</h4>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <p>₹720</p>
+                    </div>
+
+                    <!-- 6th Product Bar  -->
+
+                    <h2 class="title" style="--i:5">Women Kurtis</h2>
+            <div class="row">
+                <div class="col-4" style="--i:12">
+                    <img src="https://images.meesho.com/images/products/14175090/2e65f_512.webp">
+                    <h4>Hetsa Women Cotton Blend Embroidered Plus Kurti...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+
+                    </div>
+                    <p>₹260</p>
+                </div>
+                <div class="col-4" style="--i:13">
+                    <img src="https://images.meesho.com/images/products/391645490/tibgs_512.webp">
+                    <h4>White Kurti set...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹200</p>
+                </div>
+                <div class="col-4" style="--i:14">
+                    <img src="https://images.meesho.com/images/products/177625233/pwicn_512.webp">
+                    <h4>FASHION COTTON KURTA...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹170</p>
+                </div>
+                <div class="col-4" style="--i:15">
+                    <img src="https://images.meesho.com/images/products/277065344/i8dq8_512.webp">
+                    <h4>Ethnic kurti with pant and dupatta set...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹160</p>
+                </div>
+
+                    <!-- 7th Product Bar  -->
+
+                <h2 class="title" style="--i:5">Top Sarees</h2>
+            <div class="row">
+                <div class="col-4" style="--i:12">
+                    <img src="https://images.meesho.com/images/products/400079112/jl6na_512.webp">
+                    <h4>Divine Hathi Saree</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+
+                    </div>
+                    <p>₹370</p>
+                </div>
+                <div class="col-4" style="--i:13">
+                    <img src="https://images.meesho.com/images/products/75025100/65thz_512.webp">
+                    <h4>Banarasi Silk Saree</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>₹600</p>
+                </div>
+                <div class="col-4" style="--i:14">
+                    <img src="https://images.meesho.com/images/products/376962998/xxh9j_512.webp">
+                    <h4>Buy Exquisite Georgette Embroidery Work Saree...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹320</p>
+                </div>
+                <div class="col-4" style="--i:15">
+                    <img src="https://images.meesho.com/images/products/22284671/jmb9h_512.webp">
+                    <h4>Net Yellow Embroidered Saree With Blouse</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹335</p>
+                </div>
+
+                    <!-- 8th Product Bar  -->
+
+                <h2 class="title" style="--i:5">Men Top Shirt</h2>
+            <div class="row">
+                <div class="col-4" style="--i:12">
+                    <img src="https://images.meesho.com/images/products/423782005/odsyv_512.webp">
+                    <h4>Shirt For men...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+
+                    </div>
+                    <p>₹290</p>
+                </div>
+                <div class="col-4" style="--i:13">
+                    <img src="https://images.meesho.com/images/products/222479409/fewaf_512.webp">
+                    <h4>Vivesco Men Shirts...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹280</p>
+                </div>
+                <div class="col-4" style="--i:14">
+                    <img src="https://images.meesho.com/images/products/204307799/pd2lf_512.webp">
+                    <h4>Stylish Formal Shirts For Mens...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹175</p>
+                </div>
+                <div class="col-4" style="--i:15">
+                    <img src="https://images.meesho.com/images/products/401395624/sdzw5_512.webp">
+                    <h4>vstrr double pocket shirt for men...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹290</p>
+                </div>
+
+                <!-- 9th Product Bar  -->
+
+                <h2 class="title" style="--i:5">Bed Sheets</h2>
+            <div class="row">
+                <div class="col-4" style="--i:12">
+                    <img src="https://images.meesho.com/images/products/366132905/3yyiv_512.webp">
+                    <h4>Elegant Bedsheets...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹500</p>
+                </div>
+                <div class="col-4" style="--i:13">
+                    <img src="https://images.meesho.com/images/products/429790917/xi1is_512.webp">
+                    <h4>Elastic Fitted Grey Double BedSheet With 2 Pillow. </h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>₹200</p>
+                </div>
+                <div class="col-4" style="--i:14">
+                    <img src="https://images.meesho.com/images/products/418707933/hlnqs_512.webp">
+                    <h4>100% Cotton Rajasthani Jaipuri King Size Double Bed Bedsheet with 2 Pillow Covers (90x100)...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹350</p>
+                </div>
+                <div class="col-4" style="--i:15">
+                    <img src="https://images.meesho.com/images/products/375597400/ouome_512.webp">
+                    <h4>Glace-Cotton Bedsheet For Double Bed With 2 Pillow Covers...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹220</p>
+                </div>
+
+                    <!-- 10th Product Bar  -->
+
+                <h2 class="title" style="--i:5">Jewelry Sets</h2>
+            <div class="row">
+                <div class="col-4" style="--i:12">
+                    <img src="https://images.meesho.com/images/products/85630166/cisnh_512.webp">
+                    <h4>Rhodium Plated Jewellery Set White Austrian Diamond...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+
+                    </div>
+                    <p>₹190</p>
+                </div>
+                <div class="col-4" style="--i:13">
+                    <img src="https://images.meesho.com/images/products/462708790/fptxf_512.webp">
+                    <h4>Korean Necklace set...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹330</p>
+                </div>
+                <div class="col-4" style="--i:14">
+                    <img src="https://images.meesho.com/images/products/406415432/rp4te_512.webp">
+                    <h4>Vivanta design Jewellery Sets II...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹370</p>
+                </div>
+                <div class="col-4" style="--i:15">
+                    <img src="https://images.meesho.com/images/products/274016635/huezk_512.webp">
+                    <h4>Jewellery Set With Earring And mangtikka Alloy Set...</h4>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>₹150</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .procont {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .title {
+        transition: 0.5s ease;
+        transition: 0.3s;
+        opacity: 0;
+        cursor: default;
+        animation: slideRight 1s ease forwards;
+        animation-delay: 0.1s;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+    .col-4 {
+        transition: 0.5s ease;
+        transition: 0.3s;
+        opacity: 0;
+        animation: slideBottom 1s ease forwards;
+        animation-delay: calc(0.2s * var(--i));
+    }
+
+    /* Responsive*/
+
+    @media(max-width: 980px) {
+        .main {
+            margin-top: 12rem;
+        }
+    }
+</style>
+
+<!-- JS FILES -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="script.js"></script>
+
+</html>
